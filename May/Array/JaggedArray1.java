@@ -23,6 +23,7 @@ public class JaggedArray1
 		
 		System.out.println("Please Enter the Jagged Array Values");
 		k=1;
+		System.out.printf("Enter Values in %d row",k);
 		for(i=0; i<a.length;i++)
 		{
 			//System.out.printf("Enter Values in %d row",k);

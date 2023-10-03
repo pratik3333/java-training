@@ -21,7 +21,7 @@ public class SumIsClosestToZero
 			sum=0;
 			for(j=i+1; j<a.length; j++)
 			{
-				sum=(a[i]+a[j]);
+				sum=a[i]+a[j];
 				b[k]=sum;
 				k++;
 				sum=0;
