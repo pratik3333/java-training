@@ -23,13 +23,13 @@ public class JaggedArray1
 		
 		System.out.println("Please Enter the Jagged Array Values");
 		k=1;
-		for(i=0; i<a.length; i++)
+		for(i=0; i<a.length;i++)
 		{
 			//System.out.printf("Enter Values in %d row",k);
 			System.out.println("Enter Values");
 			k++;
 			
-			for(j=0; j<a[i].length; j++)
+			for(j=0;j<a[i].length;j++)
 			{
 				a[i][j]=sc.nextInt();
 			}
