@@ -41,16 +41,22 @@ public class CountOccurence
 		
 		for(i=0; i<a.length; i++)
 		{
-			
-			if(a[i]==a[i+1])
+			for(j=i+1; j<a.length; j++)
 			{
-				count++;
+							if(a[i]==a[j])
+			                    {
+				                   count++;
+								   a[j]=-1;
+			                    }
+	
+
 			}
-			else
+			if(a[i]!=-1)
 			{
-				System.out.printf("%d----%d\n",a[i],count);
+			    System.out.printf("%d----%d\n",a[i],count);
 				count=1;
-			}
+            }
+			
 		}
 		
 		

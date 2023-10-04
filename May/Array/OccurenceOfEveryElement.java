@@ -6,7 +6,7 @@ public class OccurenceOfEveryElement
 	{
 		Scanner sc=new Scanner(System.in);
 		
-		int i,j,count=0;
+		int i,j,count=1;
 		System.out.println("Enter the Size of Array");
 		
 		int size =sc.nextInt();	
@@ -28,8 +28,9 @@ public class OccurenceOfEveryElement
 		
 		for(i=0; i<a.length; i++)
 		{
+			count=1;
 			
-			for(j=i; j<a.length; j++)
+			for(j=i+1; j<a.length; j++)
 			{
 				if(a[i]==a[j])
 				{
@@ -41,7 +42,7 @@ public class OccurenceOfEveryElement
 			if(a[i]!=-1)
 			{
 			System.out.printf("%d--->%d\n",a[i],count);
-			count=0;
+			
 			}
 		}
 	}
