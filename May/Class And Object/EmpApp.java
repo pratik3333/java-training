@@ -41,11 +41,11 @@ class EmployeeRecord
 	private Employee employee;
 	
 	
-	void setEmployee(Employee employee)
+	public void setEmployee(Employee employee)
 	{
 		this.employee=employee;
 	}
-	void getEmployee()
+	public void getEmployee()
 	{
 		int id=employee.getId();
 		int marks=employee.getMarks();
