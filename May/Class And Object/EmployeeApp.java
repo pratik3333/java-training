@@ -17,8 +17,7 @@ class Employee
 	{
 		if(progress>=60)
 		{
-			//sa=(basicsal*30)/100;
-			sa=basicsal*0.30
+			sa=(basicsal*30)/100;
 			totalsal=basicsal+sa;
 			
 		}
