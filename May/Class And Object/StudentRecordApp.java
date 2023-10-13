@@ -1,6 +1,6 @@
 /*Example: Create class name as StudentRecord with two methods 
  void setStudent(Student  …s) : this method can accept infinite number of student objects.
-void show(): this method can display student records.
+void show(): this method can display student records who get >35 marks.
 
 You have to create POJO class name as Student with field id,name and marks 
 Output
@@ -8,7 +8,7 @@ Name	Id	Marks
 a	1	90
 b	2	70
 c	3	60
-Number of students : 3 */
+Number of students who pass  3 */
 
 
 import java.util.Scanner;
@@ -51,6 +51,7 @@ class Student
 class StudentRecord
 {
 	private Student []student;
+	private int count=0;
 	
 	public void setStudent(Student ...student)
 	{
@@ -58,6 +59,7 @@ class StudentRecord
 	}
 	public void getStudent()
 	{
+		
 		for(int i=0; i<student.length; i++)
 		{
 			if(student[i].getMarks()>35)
@@ -67,8 +69,10 @@ class StudentRecord
 			int marks=student[i].getMarks();
 			
 			System.out.printf("%d\t%s\t%d\n", id,name,marks);
+			count++;
 			}
 		}
+		System.out.printf("Number of students who pass %d",count);
 	}
 }
 
