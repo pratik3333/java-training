@@ -67,7 +67,7 @@ public class VotingApp
 		
 		//System.out.println("How many Voter data you want to add");
 		//int size=sc.nextInt();
-		
+		`
 		Voter []voter=new Voter[5];
 		VoterRecord vr=new VoterRecord();
 		
