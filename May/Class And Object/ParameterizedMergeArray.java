@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 class MergeArray
 {
-	int y[]=new int[10];
 	int a[];
 	int b[];
 	int z=1;
@@ -13,8 +12,11 @@ class MergeArray
       this.b=b;	  
 	}
 	
-	void getMergeArray()
+	public int[] getMergeArray()
 	{
+		int lengthofy=a.length+b.length;
+		int y[]=new int[lengthofy];
+		
 		for(int i=0; i<a.length; i++)
 		{
 			y[z]=a[i];
@@ -25,12 +27,8 @@ class MergeArray
 			y[z]=b[i];
 			z++;
 		}
-		//return y;
+		return y;
 		
-		for(int i=0; i<z; i++)
-		{
-			System.out.println(y[i]);
-		}
 	}
 }
 
@@ -55,11 +53,11 @@ public class ParameterizedMergeArray
 		
 		MergeArray ma=new MergeArray(a,b);
 		
-		//int []result=ma.getMergeArray();
-		//for(int i=0; i<y.length; i++)
-		//{
-			//System.out.println(result);
-		//}
-		ma.getMergeArray();
+		int[] result=ma.getMergeArray();
+		for(int i=0; i<z; i++)
+		{
+			System.out.println(result);
+		}
+		//ma.getMergeArray();
 	}
 }
