@@ -10,7 +10,7 @@ class CheckCh
 		this.ch=ch;
 	}
 	
-	char check()
+	boolean check()
 	{
 		//boolean ischar= false;
 		
@@ -36,9 +36,9 @@ public class CheckChar
 		char ch=sc.nextLine().charAt(0);
 		
 		CheckCh ck=new CheckCh();
-		boolean ischar=ck.CheckCh();
+		//boolean ischar=ck.CheckCh();
 		ck.setChar(ch);
-		ischar=ck.check();
+		boolean ischar=ck.check();
 		System.out.println(ischar);
 	}
 }
