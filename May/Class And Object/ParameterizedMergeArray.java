@@ -54,9 +54,9 @@ public class ParameterizedMergeArray
 		MergeArray ma=new MergeArray(a,b);
 		
 		int[] result=ma.getMergeArray();
-		for(int i=0; i<z; i++)
+		for(int i=0; i<y.length; i++)  //something went wrong with this line
 		{
-			System.out.println(result);
+			System.out.println(result[i]);
 		}
 		//ma.getMergeArray();
 	}
