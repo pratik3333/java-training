@@ -4,7 +4,7 @@ class MergeArray
 {
 	int a[];
 	int b[];
-	int z=1;
+	int z=0;
 	
 	MergeArray(int a[],int b[])
 	{
@@ -12,19 +12,24 @@ class MergeArray
       this.b=b;	  
 	}
 	
+	
 	public int[] getMergeArray()
 	{
 		int lengthofy=a.length+b.length;
-		int y[]=new int[lengthofy];
 		
-		for(int i=0; i<a.length; i++)
+		int y[]=new int[lengthofy];
+		//int j=0;
+		for(int i=0; i<y.length; i++)
 		{
+			//if(i<a.length)
 			y[z]=a[i];
+		   //else
+			 //  y[i]=b[j++];
 			z++;
 		}
 		for(int i=0; i<b.length; i++)
 		{
-			y[z]=b[i];
+			y[i+a.length]=b[i];
 			z++;
 		}
 		return y;
@@ -53,8 +58,8 @@ public class ParameterizedMergeArray
 		
 		MergeArray ma=new MergeArray(a,b);
 		
-		int[] result=ma.getMergeArray();
-		for(int i=0; i<y.length; i++)  //something went wrong with this line
+		int []result=ma.getMergeArray();
+		for(int i=0; i<result.length; i++)  //something went wrong with this line
 		{
 			System.out.println(result[i]);
 		}
