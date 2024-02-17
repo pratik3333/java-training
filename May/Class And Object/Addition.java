@@ -1,11 +1,12 @@
 
 class Calculater{
 
-    public int add()
+    void add(int a, int b)
     {
-
-        System.out.println("Hello i am add method");
-        return 0;
+        // System.out.println("Hello i am add method");
+        int re= a+b;;
+        System.out.println("The result is " +  re);
+        
     }
 }
 
@@ -16,7 +17,6 @@ public class Addition {
         int b=11;
 
         Calculater cl = new Calculater();
-        int result=cl.add();
-        System.out.println(result);
+        cl.add(a,b);
     }
 }
