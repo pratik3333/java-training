@@ -28,7 +28,7 @@ public class CompareString {
         }
         else
         {
-            System.out.println("Names are not same");
+            flag=0;
         
         }
 
