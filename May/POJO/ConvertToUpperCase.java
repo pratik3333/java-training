@@ -1,3 +1,26 @@
+
+// 6. create the class name as ConvertToUpper with a following methods
+// class ConvertToUpper
+// { char c[];
+//  void setCharArray(char ch[])
+//  { //here accept the character array and store in instance variable in character array
+//  c=ch;
+//  }
+//  void convertToUpperCase()
+//  { //here we need to write the manual logics for converting lower case array
+// //to upper case
+//  }
+// }
+// public class ConvertToUpperApp
+// {
+//  public static void main(String x[])
+//  { //here declare the fix array with a some character e.g char ch[]=new char[]={"good"};
+//  //here create the object of ConvertToUpper class 
+//  //call setCharArray() function and pass ch array in setCharArray() function
+//  //call convertToUpperCase() function and see the result
+//  }
+// }
+
 import java.util.*;
 
 /**
