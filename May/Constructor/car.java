@@ -37,8 +37,6 @@ class Innercar_1 extends Innercar {
 public class car {
     public static void main(String[] args) {
         Innercar_1 ic=new Innercar_1(10);
-
-        
     }
     
 }
