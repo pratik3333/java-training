@@ -51,6 +51,6 @@ public class car {
 
 //  and if we pass super() constructor then it will show the answer like this
 
-O/P:-
+// O/P:-
 // in first Parameterise constructor
 // in second parametersize constructor
