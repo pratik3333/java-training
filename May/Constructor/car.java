@@ -16,12 +16,17 @@ import java.util.*;
  */
 class Innercar_1 extends Innercar {
 
-    public Innercar_1()
+     Innercar_1()
 {
     System.out.println("In InnerCar_1");
 }
+
+    Innercar_1(int n)
+   {
+     System.out.print("parametersize constructor");
+   }
     
-}
+}   
 
 public class car {
     public static void main(String[] args) {
