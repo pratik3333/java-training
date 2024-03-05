@@ -38,6 +38,10 @@ class HumanRecord
 
     private HumanRecord humanre;
 
+    public InnerHuman(String string, int i) {
+        //TODO Auto-generated constructor stub
+    }
+
     public void setHuman(HumanRecord humanre)
     {
         this.humanre=humanre;
@@ -53,8 +57,9 @@ public class Human {
     public static void main(String args[])
     {
         Scanner sc=new Scanner(System.in);
-        HumanRecord hr=new HumanRecord();
-        InnerHuman ih=new InnerHuman();
+        HumanRecord hr[] =new HumanRecord(2);
+        hr[0]= new HumanRecord();
+        InnerHuman ih=new InnerHuman("abc",36);
         int age;
         String name;
 
