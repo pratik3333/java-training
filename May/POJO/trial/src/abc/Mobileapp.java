@@ -44,7 +44,7 @@ public class Mobileapp {
 		// TODO Auto-generated method stub
 		
 		Camera cm= new Camera();
-		int no;
+		int no=123;
 		Call cl=new Call(no);
 		
 
