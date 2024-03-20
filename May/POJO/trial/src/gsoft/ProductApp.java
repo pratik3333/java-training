@@ -12,7 +12,6 @@ public class ProductApp {
 		int id;
 		int price;
 		
-		
 		for(int i=0; i<p.length;i++)
 		{
 			System.out.println("Enter name id and price");
