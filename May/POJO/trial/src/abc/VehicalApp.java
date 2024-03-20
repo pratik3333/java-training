@@ -1,5 +1,5 @@
 package abc;
-
+import java.util.*;
 class Vehicaln{
 	
 	private String brand;
@@ -12,17 +12,30 @@ class Vehicaln{
 		System.out.println("Brand is "+brand+"\n"+" year is "+year);
 	}
 	
+	public void vehicalNo()
+	{
+		
+	}
 	
 }
 
 class Car extends Vehicaln{
 	
 
+	private int ave;
+	private int no;
 	
-	public Car(String brand,int year)
+	public Car(String brand,int year, int ave)
 	{
 		super(brand,year);
+		System.out.println("Average is "+ave);
 		
+	}
+	
+	public void vehicalNo(int no)
+	{
+		this.no=no;
+		System.out.println("Car registration number is "+no);
 	}
 }
 
@@ -31,9 +44,15 @@ public class VehicalApp {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
 		
 		
-		Car car=new Car("BMW", 2024);
+		Car car=new Car("BMW", 2024,33);
+		System.out.println("Enter car number");
+		int no=sc.nextInt();
+		car.vehicalNo(no);
+		
+		
 		
 
 	}
