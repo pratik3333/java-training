@@ -11,13 +11,15 @@ public class Pat7
 			for(int j=1; j<=7; j++)
 			{
 				
-				if(j<=3+i && j>=5-i)
-				{
+				
 					
 					
 					//System.out.print("1");
-						
-                    if(j<=4)
+						                   
+               if(j<=3+i && j>=5-i)
+				{
+
+				   if(j<=4)
 					{
 						k=j;
 						
@@ -30,15 +32,17 @@ public class Pat7
 						 n=j;
 						 System.out.print(n + " ");
 					 }	
-					 n++;
-                    					 
+				n++;
+				
 				}
-
 				else
 				{
 					System.out.print("  ");
-				}
-			}
+				}  					 
+				
+
+				
+		}
 			System.out.println();
 		}
 	}
