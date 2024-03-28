@@ -14,7 +14,7 @@ public class Pat9
                 //if(f==true)
 				//{
 									
-				  if(j<=2+i && j>=4-i && i<4 && f==true)
+				  if(j<=2+i && j>=4-i && i<=4 && f==true)
 				   {
 					 System.out.print("*");
 					 f=false;
