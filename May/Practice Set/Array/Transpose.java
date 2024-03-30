@@ -1,3 +1,5 @@
+// Transpose of a matrix is obtained by changing rows to columns and columns to rows. In other words, the transpose of 
+ //A[][] is obtained by changing A[i][j] to A[j][i].
 
 import java.util.*;
 
