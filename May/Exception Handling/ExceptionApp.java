@@ -4,12 +4,13 @@ import java.util.*;
 interface First
 {
 	void divis();
+	
 }
 
 class Trial implements First
 {
 	int a,b,c;
-	void initi(int a,int b)
+	 void initi(int a,int b)
 	{
 		this.a=a;
 		this.b=b;
@@ -42,6 +43,7 @@ public class ExceptionApp
 		Scanner sc=new Scanner(System.in);
 		
 		Trial tr=new Trial();
+		
 		
 		System.out.println("Enter two values for division");
 		int a=sc.nextInt();
