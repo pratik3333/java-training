@@ -10,6 +10,9 @@ interface First
 class Trial implements First
 {
 	int a,b,c;
+	int p=10;
+	int q=90;
+	int r;
 	 void initi(int a,int b)
 	{
 		this.a=a;
@@ -21,8 +24,16 @@ class Trial implements First
 
       try
 	  {
+		  try
+		  {
 		  c=a/b;
 		  System.out.println("Division of two number is " + c);
+		  }
+		  finally
+		  {
+		  r=p+q;
+		  System.out.println("Addition of two is " + r);
+		  }
 	  }	  
 	  catch(Exception ex)
 	  {
