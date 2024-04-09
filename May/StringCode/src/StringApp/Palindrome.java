@@ -3,11 +3,11 @@ import java.util.*;
 
 class Pali
 {
-	String s="";
+	//String s="";
 	
 	 boolean checkStr(String s)
 	{
-		 this.s=s;
+		// this.s=s;
 		int i=0, j=s.length() -1;
 		
 		while(i < j)
