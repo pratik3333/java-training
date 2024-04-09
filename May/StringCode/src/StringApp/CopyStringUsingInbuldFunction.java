@@ -1,23 +1,21 @@
 package StringApp;
 import java.util.*;
 
-public class CopyStringWithoutUsingInbuldFunction {
+public class CopyStringUsingInbuldFunction {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
 		Scanner sc=new Scanner(System.in);
 		
-		System.out.println("Enter string here:--- ");
+		System.out.println("Enter String here");
 		String str=sc.nextLine();
 		
-		String s="";
+		String str1="";
 		
-		//s.=str.toCharArray();
-		s=str;
+		str1=String.copyValueOf(str.toCharArray());
 		
-		System.out.println("Second string is:- "+s);
-		
+		System.out.println("Second string is "+ str1);
 	}
 
 }
