@@ -1,3 +1,6 @@
+
+//Write a java program to find length of a string
+
 package StringApp;
 import java.util.*;
 
