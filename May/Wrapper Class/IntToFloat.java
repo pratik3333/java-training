@@ -13,5 +13,7 @@ public class IntToFloat
 		
 		float f=a;
 		System.out.println("After conversion in float "+f);
+		
+		
 	}
 }
