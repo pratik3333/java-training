@@ -1,3 +1,5 @@
+//WAP to comapre two string
+
 package StringApp;
 import java.util.*;
 
