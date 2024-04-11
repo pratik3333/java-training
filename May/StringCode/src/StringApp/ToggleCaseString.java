@@ -14,7 +14,7 @@ public class ToggleCaseString {
 		String str=sc.nextLine();
 		
 		String str1;
-		
+		//char ch1;
 		for(int i=0; i<str.length(); i++)
 		{
 			char ch=str.charAt(i);
@@ -23,17 +23,27 @@ public class ToggleCaseString {
 			{
 	
 				
-			// 	char ch1=parseInt(ch);
+			 	//int ch1=parseInt(ch);
+				int ch1=parseInt(ch);
 				
-				char ch1=parseInt(ch);
+				char chh=ParseString(ch1);
+			 	
+			 	
+			 	System.out.println("After Conversion "+ chh);
 				
-				System.out.println(char(ch1-32));
+				
+				
 	
 			}
 		
 			
 		}
 		
+	}
+
+	private static char ParseString(int ch1) {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 
 	private static char parseInt(char ch) {
