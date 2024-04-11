@@ -19,17 +19,18 @@ public class ToggleCaseString {
 		{
 			char ch=str.charAt(i);
 			
-			if(ch>='a' && ch<='z' && ch!=' ')
+			if(ch>='a' && ch<='z')
 			{
+			  int ss=	ch-48 +32;
 	
 				
 			 	//int ch1=parseInt(ch);
-				int ch1=parseInt(ch);
+				//int ch1=parseInt(ch);
 				
-				char chh=ParseString(ch1);
+				//char chh=ParseString(ch1);
 			 	
 			 	
-			 	System.out.println("After Conversion "+ chh);
+			 	System.out.println("After Conversion "+ ss);
 				
 				
 				
@@ -41,14 +42,6 @@ public class ToggleCaseString {
 		
 	}
 
-	private static char ParseString(int ch1) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-	private static char parseInt(char ch) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
+	
 
 }
