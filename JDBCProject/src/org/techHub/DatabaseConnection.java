@@ -47,6 +47,8 @@ public class DatabaseConnection {
 				{
 					System.out.println(rs.getInt(1)+"\t"+rs.getString(2));
 				}
+				
+				
 			
 			}
 			else
