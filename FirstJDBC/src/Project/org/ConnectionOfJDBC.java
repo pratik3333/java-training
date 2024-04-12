@@ -22,16 +22,18 @@ public class ConnectionOfJDBC {
 			
 			System.out.println("Connection succesfull");
 			
-			System.out.println("Enter id name salary");
+			System.out.println("Enter id name salary and age");
 			int id=sc.nextInt();
 			sc.nextLine();
 			String name=sc.nextLine();
 			int salary=sc.nextInt();
 			
+			
 			PreparedStatement stmt=conn.prepareStatement("insert into HR values(?,?,?)");
 			stmt.setInt(1, id);
 			stmt.setString(2, name);
 			stmt.setInt(3, salary);
+			//stmt.setInt(4, age);)
 			
 			int v=stmt.executeUpdate();
 			
