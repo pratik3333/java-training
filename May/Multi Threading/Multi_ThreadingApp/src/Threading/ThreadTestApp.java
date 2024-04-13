@@ -10,7 +10,7 @@ class MyThreadfirst extends Thread
 			for(int i=1; i<=5; i++)
 			{
 				System.out.println("First Thread " + i);
-				sleep(10000);
+				sleep(1000);
 			}
 			
 		}
@@ -30,7 +30,7 @@ class MyThread1 extends Thread
 			for(int i=1; i<=50; i++)
 			{
 				System.out.println("Second Thread "+i);
-				sleep(1000);
+				sleep(100);
 			}
 
 		}
