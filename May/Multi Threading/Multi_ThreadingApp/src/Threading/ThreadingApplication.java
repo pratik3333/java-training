@@ -13,7 +13,7 @@ class MyThreadd extends Thread
 				
 				if(i==3)
 				{
-					stop();
+					stop();  //stop(): this method is used for terminate thread or destroy thread
 				}
 				sleep(10000);
 			}
@@ -52,7 +52,7 @@ public class ThreadingApplication {
 		
 		MyThreadd m=new MyThreadd();
 		m.start();
-		m.join();
+		m.join(); // this method hold another thread execution when ever working thread not complete its execution
 		
 		System.out.println("Now Thread Status is "+ m.isAlive());
 		MyThread11 m1=new MyThread11();
