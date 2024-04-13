@@ -27,7 +27,7 @@ public class ThreadApp {
      
 		MyThread mt= new MyThread();
 		
-		mt.start();
+		mt.start(); //this start method will call run method.
 		
 	}
 
