@@ -2,41 +2,48 @@ package ShreeKrushna.org;
 
 import java.util.*;
 
-interface Interfa
+interface Swimable
 {
 	//void setValue();
-    void setValue(int a);
-	void showValue();
+    void swim();
 }
 
-class FirstTry implements Interfa
+interface Flyable
+{
+	void fly();
+}
+
+
+class Bird implements Swimable,Flyable
 {
 
-	int a;
 	@Override
-	public void setValue(int a) {
+	public void fly() {
 		// TODO Auto-generated method stub
-		this.a=a;
-		//System.out.println("Value is "+a);
+		System.out.println("Bird can fly");
+		
+		
 	}
 
+
 	@Override
-	public void showValue() {
+	public void swim() {
 		// TODO Auto-generated method stub
-		System.out.println("Value of A is "+a);
+		System.out.println("Bird can swim");
+		
 	}
+
 	
 }
 
 public class FirstInterfaceApp {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 
-		FirstTry ftr= new FirstTry();
-		
-		ftr.setValue(10);
-		ftr.showValue();
+		Bird br=new Bird();
+		br.fly();
+		br.swim();
 	}
 
 }
