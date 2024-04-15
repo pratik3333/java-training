@@ -1,7 +1,4 @@
 package ShreeKrushna.org;
-
-import java.util.*;
-
 interface Swimable
 {
 	//void setValue();
@@ -13,8 +10,12 @@ interface Flyable
 	void fly();
 }
 
+interface Walkable
+{
+	void walk();
+}
 
-class Bird implements Swimable,Flyable
+class Bird implements Swimable,Flyable,Walkable
 {
 
 	@Override
@@ -32,6 +33,11 @@ class Bird implements Swimable,Flyable
 		System.out.println("Bird can swim");
 		
 	}
+	
+	public void walk()
+	{
+		System.out.println("Bird can walk");
+	}
 
 	
 }
@@ -44,6 +50,7 @@ public class FirstInterfaceApp {
 		Bird br=new Bird();
 		br.fly();
 		br.swim();
+		br.walk();
 	}
 
 }
