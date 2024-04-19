@@ -23,7 +23,7 @@ public class App
 	{
 		Scanner sc=new Scanner(System.in);
 		
-		A a[]=new A[5];
+		A a[]=new A[6];
 		//A v=new A();
 		System.out.println("Enter array values");
 		
