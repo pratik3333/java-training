@@ -23,11 +23,12 @@ public class MenuDriven {
 		System.out.println();
 		System.out.println();
 		
+		int count=0;
 		
 		switch(choice)
 		{
 		case 1:
-			int count=0;
+			 count=0;
 			for(int i=2; i<no; i++)
 			{
 				if(no%i==0)
@@ -47,6 +48,44 @@ public class MenuDriven {
 			break;
 			
 		case 2:
+			
+			 count=0;
+			 int te=no;
+			 int tempno=no;
+			 while(no!=0)
+			 {
+				 no=no/10;
+				 count++;
+			 }
+			 int sum=0;
+			 
+			 no=tempno;
+			 int s1=0;
+			 
+			 while(no!=0)
+			 {
+				 int rem=no%10;
+				 no=no/10;
+				 sum=1;
+				 
+				 for(int i=1; i<=count; i++)
+				 {
+//					 System.out.println("rem is "+rem);
+					 sum =(rem*sum);
+//					 System.out.println("i am checking sum of every number "+sum);
+				 }
+				 
+				 s1=sum+s1;
+			 }
+			 
+			 if(s1==te)
+			 {
+				 System.out.println("Number is armstrong number");
+			 }
+			 else
+			 {
+				 System.out.println("Number is not armstrong number");
+			 }
 			break;
 		
 		
