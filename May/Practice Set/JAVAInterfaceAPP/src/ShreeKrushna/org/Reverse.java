@@ -13,7 +13,7 @@ public class Reverse {
 		int rev=0;
 		while(no!=0)
 		{
-//			int temp=0;
+//			
 		  temp=no%10;
 			
 			rev=rev*10+temp;
