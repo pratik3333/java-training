@@ -87,6 +87,83 @@ public class MenuDriven {
 				 System.out.println("Number is not armstrong number");
 			 }
 			break;
+			
+		case 3:
+			int tsum=0;
+			int fsum=0;
+			
+			int temno=no;
+			
+			while(no!=0)
+			{
+				int rem=no%10;
+//				System.out.println("rem is "+rem);
+				no=no/10;
+				tsum=1;
+				for(int i=1; i<=rem;i++)
+				{
+					tsum=tsum*i;
+				}
+				fsum=tsum+fsum;
+//				System.out.println("Final sum is inside while"+fsum);
+			}
+//			System.out.println("Final sum is ouside while"+fsum);
+			if(fsum==temno)
+			{
+				System.out.println("Number is strong number");
+			}
+			else
+			{
+				System.out.println("Number is not strong number");
+			}
+			break;
+			
+		case 4:
+			int frtemp=no;
+			int frsum=0;
+			for(int i=1; i<no; i++)
+			{
+				if(no%i==0)
+				{
+					//System.out.println("devided i is "+i);
+					frsum=i+frsum;
+				}
+			}
+			
+			//System.out.println("final sum is "+frsum);
+			if(frsum==frtemp)
+			{
+				System.out.println("Number is perfect number");
+			}
+			else
+			{
+				System.out.println("Number is not perfect number");
+			}
+			break;
+			
+		case 5:
+			int fitemp=no;
+			int fd=0;
+			while(no!=0)
+			{
+				int rem=no%10;
+				if(rem==0)
+				{
+//					System.out.println("number is duck number");
+					fd=1;
+					break;
+				}
+				no=no/10;
+			}
+			if(fd==1)
+			{
+				System.out.println("given number is duck number");
+			}
+			else
+			{
+				System.out.println("Given number is not duck number");
+			}
+			break;
 		
 		
 		}
