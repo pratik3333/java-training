@@ -78,7 +78,6 @@ public class ProductDetails
 		product[i].setId(id);
 		product[i].setPrice(price);
 		}
-
 		
 		pr.setProduct(product);
 		pr.getProduct();

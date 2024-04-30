@@ -1,10 +1,14 @@
+/* Write program to create class name as MergeTwoArray with parameterized constructor 
+MergeTwoArray(int [],int []): this constructor accept two array as parameter
+int [] getMergeArray(): this function merge two array in third array and return new merged array */
+
 import java.util.Scanner;
 
 class MergeArray
 {
 	int a[];
 	int b[];
-	int z=0;
+	int z=1;
 	
 	MergeArray(int a[],int b[])
 	{
@@ -18,20 +22,20 @@ class MergeArray
 		int lengthofy=a.length+b.length;
 		
 		int y[]=new int[lengthofy];
-		//int j=0;
+		int j=0;
 		for(int i=0; i<y.length; i++)
 		{
-			//if(i<a.length)
-			y[z]=a[i];
-		   //else
-			 //  y[i]=b[j++];
-			z++;
+			if(i<a.length)
+			y[i]=a[i];
+		   else
+			   y[i]=b[j++];
+			//z++;
 		}
-		for(int i=0; i<b.length; i++)
+		/*for(int i=0; i<b.length; i++)
 		{
 			y[i+a.length]=b[i];
-			z++;
-		}
+			//z++;
+		}*/
 		return y;
 		
 	}

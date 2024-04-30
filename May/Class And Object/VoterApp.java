@@ -1,4 +1,3 @@
-
 import java.util.*;
 
 public class VoterApp
@@ -31,8 +30,6 @@ public class VoterApp
 		{
 			 System.out.println("Product found with following details");
 		}
-		
-		
 	}
 }
 

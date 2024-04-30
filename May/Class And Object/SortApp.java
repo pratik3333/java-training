@@ -42,7 +42,8 @@ public class SortApp
 		ar.setArray(a);
 		
 		int []result=ar.getSortArray();
-		for(int i=0; i<result.length; i++)
+		System.out.println("After sorting array is ");
+		for(int i=0; i<a.length; i++)
 		{
 			System.out.println(result[i]);
 		}

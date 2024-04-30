@@ -32,11 +32,6 @@ class Freq
 			   System.out.printf("%d----%d\n",a[i],count);
                count=1;			   
 			}
-			/*else
-			{
-				System.out.printf("%d----%d\n",a[i],count);
-               count=0;
-			}*/
 		}
 	}
 }

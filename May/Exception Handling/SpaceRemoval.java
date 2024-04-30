@@ -14,7 +14,7 @@ public class SpaceRemoval
 			char ch=s.charAt(i);
 			if(ch!=32)
 			{
-				s1=String(char(ch));
+				s1=;
 			}
 		}
 		System.out.println(s1);

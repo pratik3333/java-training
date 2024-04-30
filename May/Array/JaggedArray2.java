@@ -25,7 +25,7 @@ public class JaggedArray2
 			}
 		}
 		
-		System.out.printf("Display Jagged Array: ");
+		System.out.printf("Display Jagged Array: \n");
 		for(i=0; i<a.length; i++)
 		{
 			for(j=0; j<a[i].length; j++)
