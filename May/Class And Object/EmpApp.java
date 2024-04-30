@@ -52,6 +52,7 @@ class EmployeeRecord
 		String name=employee.getName();
 		
 		System.out.printf("%s\t%d\t%d",name,id,marks);
+		
 	}
 }
 

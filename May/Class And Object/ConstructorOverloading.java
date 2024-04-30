@@ -4,12 +4,12 @@ class Add
 {
 	Add(int a,int b)
 	{
-		System.out.printf("Addition of two Integer number is %d",a+b);
+		System.out.printf("\nAddition of two Integer number is %d",a+b);
 	}
 	
 	Add(float x,float y)
 	{
-		System.out.printf("Addition of two Float number is %f",x+y);
+		System.out.printf("\nAddition of two Float number is %f",x+y);
 	}
 }
 
