@@ -22,14 +22,17 @@ public class RemoveData {
 		
 		System.out.println("Enter which element you wants to remove");
 		int re=sc.nextInt();
-		try
-		{
-		boolean b=(boolean) al.remove(re);
-		}
-		catch(Exception ex){
-			System.out.println(ex);
-		}
 		
+		Object b=al.remove(re);
+		
+		if((boolean) b)
+		{
+			System.out.println("Data remove succesfully");
+		}
+		else
+		{
+			System.out.println("Data not found");
+		}
 		
 	}
 
