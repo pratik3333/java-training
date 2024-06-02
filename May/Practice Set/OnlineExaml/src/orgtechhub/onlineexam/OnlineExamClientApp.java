@@ -16,7 +16,10 @@ public class OnlineExamClientApp {
 		
 		do
 		{
-			
+			System.out.println("Enter 1 for adding question");
+			System.out.println("Enter 2 for viweing all questions");
+			System.out.println("Enter 3 for removing question by ID");
+			System.out.println("Enter 4 for removing question by question");
 			System.out.println("Enter your choice");
 			int choice=sc.nextInt();
 			
@@ -67,6 +70,13 @@ public class OnlineExamClientApp {
 				int rid=sc.nextInt();
 				
 				helper.removeQuestion(rid-1);
+				
+				break;
+			case 4:
+				sc.nextLine();
+				System.out.println("Enter question for removing");
+				String rque=sc.nextLine();
+				helper.searchQuestion(rque);
 				
 				break;
 				default:

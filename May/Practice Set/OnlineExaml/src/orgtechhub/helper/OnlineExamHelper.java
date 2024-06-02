@@ -20,7 +20,7 @@ public class OnlineExamHelper {
 		{
 			Question qn=(Question)i.next();
 			
-			System.out.println(qn.getId()+"\t"+qn.getQuestion());
+			System.out.println(qn.getId()+"\t"+qn.getQuestion()+"\t"+qn.getAnswer());
 		}
 	}
 	
@@ -47,6 +47,50 @@ public class OnlineExamHelper {
 		else
 		{
 			System.out.println("Id not available......");
+		}
+	}
+	
+	public void searchQuestion(String rque)
+	{
+		
+		boolean flag=false;
+		
+		for(Object obj:list)
+		{
+			Question qu=(Question)obj;
+			
+			if(qu.getQuestion().equals(rque))
+			{
+				flag=true;
+				System.out.println(qu.getQuestion()+"\t"+qu.getAnswer());
+				break;
+			}
+		}
+//		Iterator i=list.iterator();
+//		
+//		while(i.hasNext())
+//		{
+//			Question qu=(Question)i.next();
+//			
+//			if(qu.getQuestion().equals(rque))
+//			{
+//				flag=true;
+//				 n=qu.getQuestion();
+//				break;
+//				
+//			}
+//		}
+		if(flag)
+		{
+			
+			System.out.println("Question found");
+			
+			
+			
+		}
+		else
+		{
+			System.out.println("Question is not found");
 		}
 	}
 	
