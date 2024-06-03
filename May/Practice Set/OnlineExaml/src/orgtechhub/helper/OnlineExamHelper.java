@@ -50,7 +50,7 @@ public class OnlineExamHelper {
 		}
 	}
 	
-	public void searchQuestion(String rque)
+	public void rempveQuestionByQuestion(String rque)
 	{
 		
 		boolean flag=false;
@@ -63,7 +63,7 @@ public class OnlineExamHelper {
 			{
 				flag=true;
 				list.remove(obj);
-				System.out.println(qu.getQuestion()+"\t"+qu.getAnswer());
+//				System.out.println(qu.getQuestion()+"\t"+qu.getAnswer());
 				break;
 			}
 		}
@@ -92,6 +92,26 @@ public class OnlineExamHelper {
 		else
 		{
 			System.out.println("Question is not found");
+		}
+	}
+	
+	public void searchQuestion(String sque)
+	{
+		boolean flag=false;
+		for(Object obj:list)
+		{
+			Question qn=(Question)obj;
+			
+			if(qn.getQuestion().equals(sque))
+			{
+				System.out.println("Question found.....");
+				flag=true;
+				break;
+			}
+		}
+		if(!flag)
+		{
+			System.out.println("Question not found....");
 		}
 	}
 	
