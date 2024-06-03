@@ -20,6 +20,7 @@ public class OnlineExamClientApp {
 			System.out.println("Enter 2 for viweing all questions");
 			System.out.println("Enter 3 for removing question by ID");
 			System.out.println("Enter 4 for removing question by question");
+			System.out.println("Enter 5 question for searching");
 			System.out.println("Enter your choice");
 			int choice=sc.nextInt();
 			
@@ -76,8 +77,14 @@ public class OnlineExamClientApp {
 				sc.nextLine();
 				System.out.println("Enter question for removing");
 				String rque=sc.nextLine();
-				helper.searchQuestion(rque);
+				helper.rempveQuestionByQuestion(rque);
+				break;
 				
+			case 5:
+				sc.nextLine();
+				System.out.println("Enter Question");
+				String sque=sc.nextLine();
+				helper.searchQuestion(sque);
 				break;
 				default:
 					System.out.println("Wrong choice");
