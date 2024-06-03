@@ -62,6 +62,7 @@ public class OnlineExamHelper {
 			if(qu.getQuestion().equals(rque))
 			{
 				flag=true;
+				list.remove(obj);
 				System.out.println(qu.getQuestion()+"\t"+qu.getAnswer());
 				break;
 			}
@@ -83,7 +84,7 @@ public class OnlineExamHelper {
 		if(flag)
 		{
 			
-			System.out.println("Question found");
+			System.out.println("Question deleted ");
 			
 			
 			

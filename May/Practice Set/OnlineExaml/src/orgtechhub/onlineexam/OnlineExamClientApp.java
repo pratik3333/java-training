@@ -76,7 +76,8 @@ public class OnlineExamClientApp {
 				sc.nextLine();
 				System.out.println("Enter question for removing");
 				String rque=sc.nextLine();
-				helper.searchQuestion(rque);
+				helper.rempveQuestionByQuestion(rque);
+				
 				
 				break;
 				default:
