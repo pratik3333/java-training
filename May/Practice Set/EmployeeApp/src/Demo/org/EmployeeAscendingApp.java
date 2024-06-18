@@ -37,7 +37,7 @@ class Employee implements Comparable
          }
 }
 
-class CompComp
+public class EmployeeAscendingApp
 {
 	public static void main(String[] args)
 	{
@@ -60,12 +60,12 @@ class CompComp
 
 
  
-
-public class EmployeeAscendingApp {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-
-}
+//
+// {
+//
+//	public static void main(String[] args) {
+//		// TODO Auto-generated method stub
+//
+//	}
+//
+//}
