@@ -1,12 +1,11 @@
 package Demo.org;
+import java.lang.*;
 import java.util.*;
 
 
 
-public class EmployeeAscendingApp
-{
-	public static void main(String[] args)
-	{
+public class EmployeeAscendingApp {
+	public static void main(String[] args) {
 		Employee e1=new Employee("digvijay",100);
 		Employee e2=new Employee("Pranit",130);
 		Employee e3=new Employee("omkar",150);
