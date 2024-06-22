@@ -15,13 +15,17 @@ public class ShowVectorElement {
 		v.add(500);
 		
 		Iterator i=v.iterator();
+		int sum=0;
 		
 		while(i.hasNext())
 		{
-			Object obj=i.next();
+			Integer obj=(Integer)i.next();
+			
 			System.out.println(obj);
+			sum=sum+obj;
 			
 		}
+		System.out.println("TOtal sum is "+sum);
 	}
 
 }
