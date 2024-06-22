@@ -16,8 +16,9 @@ public class SetAndGet {
 		Object obj=al.get(3);
 		System.out.println("Element is " + obj);
 		
+		al.remove(3);
 		
-		al.set(5, 4444);
+		al.set(3, 4444);
 		
 		
 		System.out.println(al);
