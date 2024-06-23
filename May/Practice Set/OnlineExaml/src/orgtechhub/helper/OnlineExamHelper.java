@@ -5,6 +5,7 @@ import java.util.*;
 
 public class OnlineExamHelper {
 
+	Scanner sc=new Scanner(System.in);
 	ArrayList list=new ArrayList();
 	
 	public void addNewQuestion(Question question)
@@ -113,6 +114,29 @@ public class OnlineExamHelper {
 		{
 			System.out.println("Question not found....");
 		}
+	}
+	
+	public void attemptQuestion()
+	{
+		int count=0;
+		
+		for(Object obj:list)
+		{
+			Question ob=(Question)obj;
+			
+			System.out.println(ob.getQuestion());
+			
+			System.out.println("Options are "+ob.getOption1()+"\t"+ob.getOption2()+"\t"+ob.getOption3()+"\t"+ob.getOption4());
+			System.out.println("Enter ans");
+			String an=sc.nextLine();
+			
+			if(ob.getAnswer().equals(an))
+			{
+				count++;
+			}
+		}
+		
+		System.out.println("Corrected ans is "+count +"\t"+"out of "+"\t"+list.size());
 	}
 	
 }
