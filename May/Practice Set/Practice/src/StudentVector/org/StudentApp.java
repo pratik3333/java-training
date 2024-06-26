@@ -19,6 +19,7 @@ public class StudentApp {
 			System.out.println("Enter 2 for view student list");
 			System.out.println("Enter 3 for removing student");
 			System.out.println("Enter 4 for searching student by id or name");
+			System.out.println("Enter 5 for Arranging list in Descending order");
 			System.out.println("Enter choice");
 			int choice=sc.nextInt();
 			
@@ -64,6 +65,9 @@ public class StudentApp {
 				hp.searchStudent();
 				break;
 				
+			case 5:
+				hp.descendingStudent();
+				break;
 				default:
 					System.out.println("wrong choice");
 			}
