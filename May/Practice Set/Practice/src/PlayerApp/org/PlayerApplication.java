@@ -19,6 +19,7 @@ public class PlayerApplication {
 			System.out.println("Enter 1 for add player");
 			System.out.println("Enter 2 for view all Player");
 			System.out.println("Enter 3 for after age sorting player");
+			System.out.println("Enter 4 for edit run");
 			
 			System.out.println("Enter choice");
 			int choice=sc.nextInt();
@@ -56,6 +57,9 @@ public class PlayerApplication {
 				break;
 			case 3:
 				ph.viewSorted();
+				break;
+			case 4:
+				ph.editRun();
 				break;
 				default:
 					System.out.println("Wrong input");
