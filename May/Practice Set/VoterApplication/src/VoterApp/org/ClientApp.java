@@ -84,6 +84,7 @@ public class ClientApp {
 				
 				vm.setAddress(adm);
 				
+				
 				voter.addVoter(vm);
 				
 				

@@ -4,14 +4,17 @@ import java.util.*;
 public class WardwiseDetails {
 	
 	
-	ArrayList al=new ArrayList();
+	ArrayList vlist=new ArrayList();
 	
 	public void wardWiseVoterCount()
 	{
 		ArrayList wardNoColl=new ArrayList();
 		
-		for(Object obj:al)
+		System.out.println("Fffffffffffffff");
+		
+		for(Object obj:vlist)
 		{
+			System.out.println("........................");
 			VoterModule v=(VoterModule)obj;
 			AddressModule ad=(AddressModule)v.getAddress();
 			
@@ -26,10 +29,10 @@ public class WardwiseDetails {
 		for(Object obj:wardNoColl)
 		{
 			Integer wardNo=(Integer)obj;
-			System.err.println("Ward NO"+wardNo+"");
+			System.out.println("Ward NO"+wardNo+"");
 			System.out.println("------------------");
 			
-			for(Object obj1:al)
+			for(Object obj1:vlist)
 			{
 				VoterModule v=(VoterModule)obj;
 				AddressModule ad=(AddressModule)v.getAddress();
