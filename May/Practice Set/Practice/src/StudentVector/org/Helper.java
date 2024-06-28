@@ -146,4 +146,24 @@ public class Helper {
 		}
 	}
 	
+	@SuppressWarnings("unchecked")
+	public void descendingStudent()
+	{
+		if(v.isEmpty())
+		{
+			System.out.println("Student list is Empty...");
+		}
+		else
+		{
+			Collections.sort(v);
+			System.out.println("Sorted in descendong order");
+		}
+		
+		for(Object obj:v)
+		{
+			Module modu=(Module)obj;
+			
+			System.out.println(modu.getId()+"\t"+modu.getName()+"\t"+modu.getPer());
+		}
+	}
 }
