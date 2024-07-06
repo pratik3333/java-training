@@ -4,6 +4,8 @@ import java.util.*;
 public class Employee implements Comparable
 {
 	
+	Scanner sc=new Scanner(System.in);
+	
 //	EmployeeHelper emphel=new EmployeeHelper();
 
 	private int id;
@@ -71,7 +73,6 @@ public class Employee implements Comparable
 		// TODO Auto-generated method stub
 	
 		Employee emp=(Employee)o;
-		
 		if(this.getId()>emp.getId())
 		{
 			return 1;
@@ -85,7 +86,8 @@ public class Employee implements Comparable
 		{
 			return 0;
 		}
+		}
 		
-	}
 	
 }
+	
