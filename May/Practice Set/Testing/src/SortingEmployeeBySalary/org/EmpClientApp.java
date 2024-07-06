@@ -13,6 +13,7 @@ public class EmpClientApp {
 			System.out.println("Enter 1 for add employee");
 			System.out.println("Enter 2 for view Employee");
 			System.out.println("Enter 3 for aarange employee by salary");
+			System.out.println("Enter 4 for arrange employee by id");
 			System.out.println("Enter choice");
 			int choice=sc.nextInt();
 			
@@ -43,6 +44,9 @@ public class EmpClientApp {
 				break;
 			case 3:
 				rp.sortBySalary();
+				break;
+			case 4:
+				rp.SortById();
 				break;
 				default:
 					System.out.println("Wrong Input");

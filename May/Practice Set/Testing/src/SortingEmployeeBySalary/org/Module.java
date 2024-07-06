@@ -1,7 +1,7 @@
 package SortingEmployeeBySalary.org;
 import java.util.*;
 
-public class Module implements Comparable {
+public class Module {
 
 	private int id;
 	private String name;
@@ -56,28 +56,7 @@ public class Module implements Comparable {
 	}
 
 
-
-
-
-	@Override
-	public int compareTo(Object o) {
-		// TODO Auto-generated method stub
-		
-		Module emp=(Module)o;
-		
-		if(this.salary<emp.getSalary())
-		{
-			return 1;
-		}
-		else if(this.salary>emp.getSalary())
-		{
-			return -1;
-		}
-		else
-		{
-		    return 0;
-		}
-	}
+	
 
 	
 }

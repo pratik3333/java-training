@@ -22,7 +22,21 @@ public class Repository {
 	
 	public void sortBySalary()
 	{
-		Collections.sort(al);
+		SortBySalary ssal=new SortBySalary();
+		Collections.sort(al,ssal);
+		
+		for(Object obj:al)
+		{
+            Module mm=(Module)obj;
+			
+			System.out.println(mm.getId()+"\t"+mm.getName()+"\t"+mm.getSalary());
+		}
+	}
+	
+	public void SortById()
+	{
+		SortById sid=new SortById();
+		Collections.sort(al, sid);
 		
 		for(Object obj:al)
 		{
