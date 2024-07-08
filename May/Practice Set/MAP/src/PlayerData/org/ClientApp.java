@@ -43,7 +43,7 @@ public class ClientApp {
 				rp.viewPlayer();
 				break;
 			case 3:
-				rp.removeEmployee();
+				rp.removePlayer();
 				break;
 				default:
 					System.out.println("Wrong input");

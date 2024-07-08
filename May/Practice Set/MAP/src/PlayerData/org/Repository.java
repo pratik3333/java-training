@@ -25,7 +25,7 @@ public class Repository {
 		}
 	}
 	
-	public void removeEmployee()
+	public void removePlayer()
 	{
 		System.out.println("Enter id for remove");
 		int rid=sc.nextInt();
