@@ -1,11 +1,16 @@
-package LinkedHashMap.Within.LinkedHashMap.org;
-import java.util.*;
+package CompanyDepartmentAndEmployee.org;
+
 public class Model {
-	
-	
+
+	private int id;
 	private String name;
 	private int salary;
-	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
 	public String getName() {
 		return name;
 	}
@@ -19,12 +24,10 @@ public class Model {
 		this.salary = salary;
 	}
 	
-	
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return "\t"+ name+"\t"+salary;
+		return "[ "+id+"\t"+name+"\t"+salary+" ]";
 	}
-
 	
 }
