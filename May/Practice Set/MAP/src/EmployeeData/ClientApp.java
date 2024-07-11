@@ -22,6 +22,7 @@ public class ClientApp {
 			switch(choice)
 			{
 			case 1:
+				
 				System.out.println("Enter Employee ID");
 				int id=sc.nextInt();
 				
@@ -42,6 +43,7 @@ public class ClientApp {
 				emp.setSalary(salary);
 				
 				rp.addEmployee(id, emp);
+				
 				
 				break;
 			case 2:

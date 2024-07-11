@@ -8,7 +8,9 @@ public class Repository {
 	
 	public void addEmployee(Integer id,Model emp)
 	{
+		
 		map.put(id, emp);
+		
 	}
 
 	
