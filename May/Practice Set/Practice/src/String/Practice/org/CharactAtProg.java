@@ -18,8 +18,9 @@ public class CharactAtProg {
 		
 		for(int i=0; i<st.length();i++)
 		{
-			char ch=st.charAt(i);
+			char ch= st.charAt(i);
 			System.out.println(ch);
+			
 		}
 	}
 
