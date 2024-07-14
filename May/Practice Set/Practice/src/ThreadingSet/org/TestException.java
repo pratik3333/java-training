@@ -7,7 +7,7 @@ class Test
     {
     	if(no==100)
     	{
-    		throw new OrderNotFoundException("you cross the limit");
+    		throw new OrderNotFoundException("Order Not Found Exception");
     	}
     	else
     	{

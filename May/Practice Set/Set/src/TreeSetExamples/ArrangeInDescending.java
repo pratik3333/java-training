@@ -15,7 +15,7 @@ public class ArrangeInDescending {
 		treeset.add(10);
 		treeset.add(87);
 		
-//		NavigableSet nav=treeset.descendingSet();
+		NavigableSet nav=treeset.descendingSet(); //someting went wrong with this.
 		
 		for(Object obj:treeset)
 		{
