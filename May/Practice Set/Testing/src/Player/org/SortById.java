@@ -18,6 +18,10 @@ public class SortById implements Comparator{
 		{
 			return 1;
 		}
+		else if(p1.getId()==p2.getId()) //if both id are same then go for name.
+		{
+			return p1.getName().compareTo((p2.getName()));  //here we comapare both students name.
+		}
 		else
 		{
 		
