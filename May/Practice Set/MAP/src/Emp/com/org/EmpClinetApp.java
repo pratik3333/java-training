@@ -8,11 +8,13 @@ public class EmpClinetApp {
 		// TODO Auto-generated method stub
 
 		Repository rp=new Repository();
+//		FindById fid=new FindById();
 		Scanner sc=new Scanner(System.in);
 		do
 		{
 			System.out.println("Enter 1 for add Employee");
 			System.out.println("Enter 2 for view Emp id and name");
+			System.out.println("Enter 3 for search employee by id");
 			System.out.println("Enter choice");
 			int choice=sc.nextInt();
 			
