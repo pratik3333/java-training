@@ -33,7 +33,11 @@ public class FetchEmpData {
 				case 1:
 					ResultSet rs=stmt.executeQuery("select count(id) as totalcount from employee");
 				
-					System.out.println(rs);
+					if(rs.next())
+					{
+						int count=rs.getInt("totalcount");
+						System.out.println("Total number of employee is  "+ count);
+					}
 					break;
 				case 2:
 					ResultSet r=stmt.executeQuery("select email from employee");
