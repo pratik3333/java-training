@@ -15,6 +15,13 @@ public class CRUDjdbcApplication {
 
 		Scanner sc=new Scanner(System.in);
 		
+		try {
+			Class.forName("com.mysql.jdbc.Driver");  //Driver Load
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 		Connection conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/techhub","root","root");
 		
 		if(conn!=null)
