@@ -28,7 +28,7 @@ public class firstConnection {
 			String name=sc.nextLine();
 			String email=sc.nextLine();
 			
-			int value=stmt.executeUpdate("insert into employee values(id,'name' ,'email')");
+			int value=stmt.executeUpdate("insert into employee values("")");
 			
 			if(value>0)
 			{
