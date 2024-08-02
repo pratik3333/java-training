@@ -13,6 +13,12 @@ public class ProductWithDatabase {
 	public static void main(String[] args) throws SQLException {
 		// TODO Auto-generated method stub
 
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		Scanner sc=new Scanner(System.in);
 		Connection conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/techhub","root","root");
 		
@@ -129,6 +135,8 @@ public class ProductWithDatabase {
 		{
 			System.out.println("Connection faild");
 		}
+		
+		conn.close(); //Connection close
 	}
 
 }
