@@ -26,8 +26,8 @@ public class CreateTableInDatabase {
 		}
 		catch(Exception e)
 		{
+//			e.printStackTrace();
 			System.out.println(e);
-//			System.out.println("Connection failed");
 		}
 		
 	}
