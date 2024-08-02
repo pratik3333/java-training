@@ -17,7 +17,7 @@ public class jdbcConnection {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		Driver jd;
+		
 		DriverManager.registerDriver(jd);
 		
 		System.out.println("Driver register Succesfully...");
