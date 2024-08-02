@@ -15,6 +15,8 @@ public class CRUDjdbcApplication {
 
 		Scanner sc=new Scanner(System.in);
 		
+		
+		
 		Connection conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/techhub","root","root");
 		
 		if(conn!=null)
@@ -119,6 +121,7 @@ public class CRUDjdbcApplication {
 		{
 			System.out.println("Connection faild");
 		}
+		conn.close(); //Connection close
 	}
 
 }
