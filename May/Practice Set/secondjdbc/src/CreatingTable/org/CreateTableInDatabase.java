@@ -27,7 +27,9 @@ public class CreateTableInDatabase {
 		catch(Exception e)
 		{
 			System.out.println(e);
+//			System.out.println("Connection failed");
 		}
+		
 	}
 
 }
